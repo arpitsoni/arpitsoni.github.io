@@ -11,17 +11,14 @@
 
 
 <body style='margin : 0px; overflow: hidden;'>
-
-
-    <a-scene>
-        <a-assets>
-            <video id="penguin-sledding" autoplay loop="true" src="city.mp4"></video>
-        </a-assets>
-        <a-marker preset="custom" type='pattern' url='python.patt'>
-            <!-- Using the asset management system. -->
-            <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+    <a-scene embedded arjs="trackingMethod:best;">
+        <a-marker preset="custom" type='pattern' url='hogarth.patt'>
+            <a-box position='0 0.5 0' material='color: black;' opacity=".5"></a-box>
+            <a-sphere position="0 .25 -.8" radius=".2" color="#EF2D5E" opacity=".5">
+                <a-ring position="-.1 .1 0" color="#B96FD3" opacity=".5"></a-ring>
+                <a-ring position=".1 .1 0" color="#B96FD3" opacity=".5"></a-ring>
+            </a-sphere>
         </a-marker>
-        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-        <!-- <a-video src="airbending.mp4"></a-video> -->
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
