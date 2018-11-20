@@ -43,6 +43,10 @@
     function refrespage() {
         location.reload();
     } 
+
+    function clickTest(){
+        alert("Hi");
+    }
 </script>
 
 <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250'>
@@ -55,7 +59,7 @@
             <h3>Error : Your browser does not support.</h3>
             <!-- FOR NOTMAL VIDEO YOU CAN USE MP4 or WEBM BUT FOR ALPHA VIDEO YOU NEED TO USE .WEBM FORMAT-->
         </video>
-        <img src="Alpha_1280x720.gif" id="test1" alt="">
+        <img src="Alpha_1280x720.gif" onclick="clickTest()" id="test1" alt="">
         <img src="Alpha_course_logo.png" id="test2" alt="">
     </a-assets>
     <a-marker crossorigin="anonymous" id="memarker1" type="pattern" preset="custom" url="hogarth.patt" vidhandler>
