@@ -35,12 +35,7 @@
 
         <!--Video-->
         <video preload="auto" id="vid" autoplay loop="true" crossorigin webkit-playsinline playsinline controls>
-            <!-- <source type="video/webm" src="04_Test.webm"> -->
-            <source type="video/mp4" src="03_Test_whitebg.mp4">
-            <!-- <source type="video/mp4" src="Hands_on.mp4">
-            <source type="video/mp4" src="Happy_Family.mp4">
-            <source type="video/mp4" src="Heart_&_Soul.mp4"> -->
-            <!-- <source type="video/mov" src="02_Test_Alpha.mov"> -->
+            <source type="video/mp4" src="videoMessage.mp4">
             <h3>Error : Your browser does not support.</h3> -->
             <!-- FOR NOTMAL VIDEO YOU CAN USE MP4 or WEBM BUT FOR ALPHA VIDEO YOU NEED TO USE .WEBM FORMAT-->
         </video>
@@ -59,38 +54,43 @@
 
     <!--India Points Starts-->
     <a-marker crossorigin="anonymous" id="delhi" type="pattern" preset="custom" url="delhi.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markDelhiImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markDelhiImg'></a-plane>
         <a-entity sound="src: #horse"></a-entity>
     </a-marker>
 
     <a-marker crossorigin="anonymous" id="mumbai" type="pattern" preset="custom" url="mumbai.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markMumbaiImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markMumbaiImg'></a-plane>
         <a-entity sound="src: #horse"></a-entity>
     </a-marker>
 
     <a-marker crossorigin="anonymous" id="chennai" type="pattern" preset="custom" url="chennai.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markChennaiImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#markChennaiImg'></a-plane>
         <a-entity sound="src: #horse"></a-entity>
     </a-marker>
     <!--India Points Ends/-->
 
     <!--Hogarth Values Starts-->
     <a-marker crossorigin="anonymous" id="handsOn" type="pattern" preset="custom" url="handsOn.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#handsOnImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#handsOnImg'></a-plane>
     </a-marker>
 
     <a-marker crossorigin="anonymous" id="happyFamily" type="pattern" preset="custom" url="happyFamily.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#happyFamilyImg'></a-plane>
-    </a-marker> 
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#happyFamilyImg'></a-plane>
+    </a-marker>
 
     <a-marker crossorigin="anonymous" id="honest" type="pattern" preset="custom" url="honest.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#honestImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#honestImg'></a-plane>
     </a-marker>
 
     <a-marker crossorigin="anonymous" id="heartAndSoul" type="pattern" preset="custom" url="heartAndSoul.patt">
-        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#heartAndSoulImg'></a-plane>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#heartAndSoulImg'></a-plane>
     </a-marker>
     <!--Hogarth Values Ends/-->
+
+    <!--Video-->
+    <a-marker crossorigin="anonymous" id="memarker3" type="pattern" preset="custom" url="python.patt" vidhandler>
+        <a-plane position='0 0.1 3' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#vid'></a-plane>
+    </a-marker>
 
     <a-entity camera></a-entity>
 </a-scene>
