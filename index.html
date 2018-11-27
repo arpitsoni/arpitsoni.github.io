@@ -4,7 +4,7 @@
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
+<!-- <script>
     AFRAME.registerComponent('vidhandler', { // ... 
         init: function () {
             // Set up initial state and variables. 
@@ -26,7 +26,7 @@
     function refrespage() {
         location.reload();
     }
-</script>
+</script> -->
 
 <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250'>
     <a-assets>
@@ -63,24 +63,16 @@
 
     <a-marker crossorigin="anonymous" id="memarker3" type="pattern" preset="custom" url="python.patt" vidhandler>
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#vid'></a-plane>
-        <!-- <a-box position='0 0.5 0' material='color: red;'></a-box> -->
     </a-marker>
 
     <a-marker crossorigin="anonymous" id="memarker4" type="pattern" preset="custom" url="arpit.patt">
-        <!-- <a-ocean color="aqua" depth="100" width="100"></a-ocean>  -->
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#heart-soul'></a-plane>
-        <!-- <audio controls autoplay>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio> -->
-        <!-- <a-box position='0 0.5 0' material='color: red;'></a-box> -->
     </a-marker>
 
     <a-entity camera></a-entity>
 </a-scene>
 
-<div class="footer">
+<!-- <div class="footer">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left">
             <div class="onebleft">
@@ -183,4 +175,4 @@
     .a-enter-vr-button {
         display: none !important;
     }
-</style>
+</style> -->
