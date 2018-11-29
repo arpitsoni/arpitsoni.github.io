@@ -28,7 +28,8 @@
     }
 </script>
 
-<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250'>
+<a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; trackingMethod: best; debugUIEnabled: false; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250'
+    vr-mode-ui="enabled: false">
     <a-assets>
         <!-- Audio -->
         <audio id="horse" src="horse.mp3" preload="auto" autoplay></audio>
