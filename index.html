@@ -23,9 +23,9 @@
             }
         }
     });
-    // function refrespage() {
-    //     location.reload();
-    // }
+    function refrespage() {
+        location.reload();
+    }
 </script>
 
 <a-scene embedded artoolkit='sourceType: webcam; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250'>
@@ -88,13 +88,13 @@
     <!--Hogarth Values Ends/-->
 
     <!--Video-->
-    <a-marker crossorigin="anonymous" id="memarker3" type="pattern" preset="custom" url="python.patt" vidhandler>
+    <a-marker crossorigin="anonymous" id="videoMessage" type="pattern" preset="custom" url="video.patt" vidhandler>
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#vid'></a-plane>
     </a-marker>
 
     <a-entity camera></a-entity>
 </a-scene>
-<!-- 
+
 <div class="footer">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left">
@@ -108,7 +108,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 <style>
     .footer {
