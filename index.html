@@ -130,7 +130,7 @@
         <img src="HeartAndSoul.png" id="heartAndSoulImg" alt="Heart and Soul Value"> -->
 
         <!--3D gltf-->
-        <a-asset-item id="drone" src="/buster_drone/textures/scene.gltf"></a-asset-item>
+        <a-asset-item id="drone" src="buster_drone/textures/scene.gltf"></a-asset-item>
 
     </a-assets>
 
@@ -173,7 +173,7 @@
 
     <!--From A Frame Examples-->
     <!-- <a-marker crossorigin="anonymous" id="testFrame" type="pattern" preset="custom" url="atest.patt" log="a marker loaded"> -->
-    <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000" log="Rain entity"></a-entity>
+    <!-- <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000" log="Rain entity"></a-entity>
 
     <a-entity id="sphere" log="sphere entity" geometry="primitive: sphere" material="color: #EFEFEF; shader: flat"
         position="0 0.15 -5" light="type: point; intensity: 5" animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: 0 -0.10 -5; loop: true"></a-entity>
@@ -184,7 +184,9 @@
     <a-entity id="sky" log="sky entity" geometry="primitive: sphere; radius: 5000" material="shader: gradient; topColor: 235 235 245; bottomColor: 185 185 210"
         scale="-1 1 1"></a-entity>
 
-    <a-entity id="light" log="light entity" light="type: ambient; color: #888"></a-entity>
+    <a-entity id="light" log="light entity" light="type: ambient; color: #888"></a-entity> -->
+
+    <a-entity gltf-model="#drone" scale="0.01 0.01 0.01"></a-entity>
     <!-- </a-marker> -->
     <a-entity camera></a-entity>
 </a-scene>
