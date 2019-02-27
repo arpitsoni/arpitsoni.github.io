@@ -120,17 +120,17 @@
         </video>
 
         <!--images-->
-        <!-- <img src="MarkDelhi.png" id="markDelhiImg" alt="Delhi Image">
+       <!--  <img src="MarkDelhi.png" id="markDelhiImg" alt="Delhi Image">
         <img src="MarkMumbai.png" id="markMumbaiImg" alt="Mumbai Image">
         <img src="MarkChennai.png" id="markChennaiImg" alt="Chennai Image">
 
         <img src="HandsOn.png" id="handsOnImg" alt="Hands On Value">
         <img src="HappyFamily.png" id="happyFamilyImg" alt="Happy Family Value">
-        <img src="Honest.png" id="honestImg" alt="Honest Value">
-        <img src="HeartAndSoul.png" id="heartAndSoulImg" alt="Heart and Soul Value"> -->
+        <img src="Honest.png" id="honestImg" alt="Honest Value"> -->
+        <img src="HeartAndSoul.png" id="heartAndSoulImg" alt="Heart and Soul Value">
 
         <!--3D gltf-->
-        <a-asset-item id="drone" src="buster_drone/scene.gltf"></a-asset-item>
+        <!-- <a-asset-item id="drone" src="buster_drone/scene.gltf"></a-asset-item> -->
 
     </a-assets>
 
@@ -151,9 +151,9 @@
     <!--Hogarth Values Starts-->
     <!-- <a-marker crossorigin="anonymous" id="handsOn" type="pattern" preset="custom" url="handsOn.patt">
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#handsOnImg'></a-plane>
-    </a-marker> -->
+    </a-marker>
 
-    <!-- <a-marker crossorigin="anonymous" id="happyFamily" type="pattern" preset="custom" url="happyFamily.patt">
+    <a-marker crossorigin="anonymous" id="happyFamily" type="pattern" preset="custom" url="happyFamily.patt">
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#happyFamilyImg'></a-plane>
     </a-marker>
 
@@ -165,6 +165,11 @@
         <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#heartAndSoulImg'></a-plane>
     </a-marker> -->
     <!--Hogarth Values Ends/-->
+
+    <!--Arpit Photo Market Test-->
+    <a-marker crossorigin="anonymous" id="arpitPic" type="pattern" preset="custom" url="arpit.patt">
+        <a-plane position='0 0.1 0' scale="2 2 2" rotation="-90 0 0" material='transparent:true; alphaTest:0; src:#heartAndSoulImg'></a-plane>
+    </a-marker>
 
     <!--Video-->
     <!-- <a-marker crossorigin="anonymous" id="videoMessage" type="pattern" preset="custom" url="video.patt" vidhandler="bar: 5">
@@ -186,7 +191,7 @@
 
     <a-entity id="light" log="light entity" light="type: ambient; color: #888"></a-entity> -->
 
-    <a-entity gltf-model="#drone"></a-entity>
+    <!-- <a-entity gltf-model="#drone"></a-entity> -->
     <!-- </a-marker> -->
     <a-entity camera></a-entity>
 </a-scene>
